@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaUrgence - Livraison de médicaments 24h/24</title>
+  <link rel="stylesheet" href="pharmacie.css?v=2" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-icon">✚</span>
+        <span>PharmaU</span>
+      </a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#comment">Comment ça marche</a>
+        <a href="#commande">Commande</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="#commande">Commander</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge">Disponible 24h/24 · Livraison à domicile</span>
+          <h1 style="color: #2fa84f;">Des médicaments chez vous, rapidement et en toute confiance.</h1>
+          <p>Un site simple pour commander des produits pharmaceutiques, consulter des informations et recevoir votre commande même la nuit.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#commande">Passer commande</a>
+            <a class="btn btn-secondary" href="#services">Voir les services</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1580281657521-3494d4d00311?auto=format&fit=crop&w=900&q=80" alt="Livraison de médicaments" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header">
+          <span>Nos services</span>
+          <h2>Tout ce dont vous avez besoin pour vos médicaments à domicile</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Commandes 24h/24</h3>
+            <p>Envoyez votre demande à toute heure et recevez un suivi en temps réel.</p>
+          </article>
+          <article class="card">
+            <h3>Livraison rapide</h3>
+            <p>Notre réseau de pharmacies partenaires garantit une livraison sûre et rapide.</p>
+          </article>
+          <article class="card">
+            <h3>Conseils utiles</h3>
+            <p>Accédez à des informations fiables sur les médicaments et leur usage.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="comment" class="section how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span>Comment ça marche</span>
+          <h2>En trois étapes simples</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Choisissez vos produits</h3>
+            <p>Sélectionnez les médicaments dont vous avez besoin, avec ou sans ordonnance.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Remplissez le formulaire</h3>
+            <p>Indiquez votre adresse, votre numéro et l’heure de livraison souhaitée.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Recevez votre commande</h3>
+            <p>Un livreur partenaire apporte votre livraison directement chez vous.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section medicines-section">
+      <div class="container">
+        <div class="section-header">
+          <span>Produits disponibles</span>
+          <h2>Quelques catégories de médicaments et parapharmacie</h2>
+        </div>
+        <div class="medicines-grid">
+          <article class="medicine-card">
+            <h3>Soins du rhume</h3>
+            <p>Paracétamol, sirops, pastilles et sprays nasaux.</p>
+          </article>
+          <article class="medicine-card">
+            <h3>Douleurs et fièvre</h3>
+            <p>Anti-inflammatoires, antalgiques et compléments.</p>
+          </article>
+          <article class="medicine-card">
+            <h3>Soins de la peau</h3>
+            <p>Crèmes cicatrisantes, antiseptiques et protections solaires.</p>
+          </article>
+          <article class="medicine-card">
+            <h3>Bien-être</h3>
+            <p>Vitamines, hygiène et produits de première nécessité.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="commande" class="section order-section">
+      <div class="container order-grid">
+        <div class="order-copy">
+          <span>Commande instantanée</span>
+          <h2>Remplissez le formulaire pour recevoir vos médicaments chez vous</h2>
+          <p>Nous sommes là pour vous aider, même la nuit ou le week-end. Une réponse rapide et une livraison sécurisée, c’est notre priorité.</p>
+        </div>
+        <form id="orderForm" class="order-form">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required />
+
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" name="phone" placeholder="06 00 00 00 00" required />
+
+          <label for="address">Adresse de livraison</label>
+          <input type="text" id="address" name="address" placeholder="Rue, ville, code postal" required />
+
+          <label for="medicine">Médicaments demandés</label>
+          <textarea id="medicine" name="medicine" rows="4" placeholder="Listez les médicaments ou le besoin médical" required></textarea>
+
+          <label for="deliveryTime">Heure de livraison souhaitée</label>
+          <input type="datetime-local" id="deliveryTime" name="deliveryTime" />
+
+          <label for="notes">Remarques</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Allergies, ordonnance, informations particulières"></textarea>
+
+          <button type="submit" class="btn btn-primary">Envoyer la commande</button>
+          <p id="orderMessage" class="order-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>PharmaUrgence</h3>
+        <p>Service de commande et livraison de médicaments 24h/24.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email : contact@pharmaurgence.example</p>
+        <p>Téléphone : 06 12 34 56 78</p>
+      </div>
+      <div>
+        <h4>Note</h4>
+        <p>Ce site présente une maquette fonctionnelle. Intégrez un vrai backend pour des commandes réelles.</p>
+        <p><a href="view_orders.php" style="color: #ffffff; font-weight: 600; text-decoration: underline;">Voir les commandes enregistrées</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
